@@ -23,7 +23,7 @@ deploy:
         repository: $DOCKER_REGISTRY/$IMAGE_NAME
         registry: https://registry.hub.docker.com
     - script:
-        name: deploy
+        name: rolling-deploy-occs
         code: |
                 set -ex
                 INSECURE_CURL="-k"
